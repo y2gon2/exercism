@@ -14,7 +14,4 @@ defmodule ETL do
       {String.downcase(word), point}
     end
   end
-
-
-
 end
