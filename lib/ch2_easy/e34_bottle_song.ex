@@ -64,7 +64,6 @@ defmodule BottleSong do
     |> Enum.filter(fn {_content, idx} -> idx in (start_bottle - take_down + 1)..start_bottle end)
     |> Enum.map(fn {content, _idx} -> content end)
     |> Enum.join("\n\n")
-    |> String.replace("\t", "")
-
+    |> String.replace("    ", "")
   end
 end
