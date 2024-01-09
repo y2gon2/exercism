@@ -15,11 +15,9 @@ defmodule Proverb do
       end,
       fn _ -> nil end
     )
-
     Enum.to_list(result)
     |> Enum.join("")
   end
-
   defp last(first), do: "And all for the want of a #{first}.\n"
   defp others(prev, cur), do: "For want of a #{prev} the #{cur} was lost.\n"
 end
